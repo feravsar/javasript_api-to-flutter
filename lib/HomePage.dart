@@ -16,7 +16,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     getData();
@@ -39,6 +38,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Visibility(
         visible: isLoaded,
+        // ignore: sort_child_properties_last
         child: ListView.builder(
             itemCount: posts?.length,
             itemBuilder: (context, index) {
@@ -47,19 +47,19 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Title:" + posts![index].title,
+                    "Title:${posts![index].title}",
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    "ID: " + posts![index].id.toString(),
+                    "ID: ${posts![index].id}",
                     style: TextStyle(fontSize: 20),
                   ),
                   Text(
-                    "USERID: " + posts![index].userId.toString(),
+                    "USERID: ${posts![index].userId}",
                     style: TextStyle(fontSize: 20),
                   ),
                   Text(
-                    "Body: " + posts![index].body.toString(),
+                    "Body: ${posts![index].body}",
                     style: TextStyle(
                       fontSize: 16,
                     ),
