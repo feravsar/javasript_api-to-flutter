@@ -1,8 +1,8 @@
 # javasript_api
 
-A new Flutter project.
+Javascript API'sini flutter da göstermek üzerine kurulu bir projedir.
 
-## Getting Started
+
 
 This project is a starting point for a Flutter application.
 
